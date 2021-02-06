@@ -1,0 +1,66 @@
+<template lang="pug">
+.page-1
+  .so.so-0
+    img.so.so-1(src="@|367.png|")
+    img.so.so-2(src="@|368.png|")
+    img.so.so-3(src="@|372.png|")
+    //- img.so.so-4(src="@|366.png|")
+    img.so.so-5(src="@|365.png|")
+    img.so.so-6(src="@|364.png|" o-animation="shrink" go="page2//moveToLeft/moveFromRight")
+</template>
+
+<script>
+  module.exports = {
+    created: function () {
+      owo.animate('zoomIn3', this.query('.so-1'), 1000)
+      owo.animate('zoomIn', this.query('.so-2'), 1800)
+    }
+  }
+</script>
+
+
+<style lang="less">
+.so-0 {
+  left: 0px;
+  top: 0px;
+  width: 750px;
+  height: 1508px;
+  z-index: 0;;
+}
+.so-1 {
+  left: 327px;
+  top: 890px;
+  z-index: -1;
+}
+.so-2 {
+  left: 71px;
+  top: 704px;
+  z-index: -2;
+}
+.so-3 {
+  left: 98px;
+  top: 721px;
+  z-index: -3;
+}
+.so-4 {
+  left: 355px;
+  top: 1224px;
+  z-index: -4;
+}
+.so-5 {
+  left: 93px;
+  top: 293px;
+  z-index: -5;
+}
+.so-6 {
+  left: 255px;
+  top: 1137px;
+  z-index: -6;
+}
+.so-7 {
+  left: 0px;
+  top: 0px;
+  z-index: -7;
+}
+
+</style>

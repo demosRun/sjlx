@@ -1,0 +1,57 @@
+<template lang="pug">
+.page2
+  img.so.so-0(src="@|376.jpg|")
+  img.so.so-1(src="@|379.png|")
+  img.so.so-2(src="@|380.png|")
+  img.so.so-3(src="@|381.png|")
+  .video-box
+    video(width="660" object-fill="cover" src="@|video.mp4|" controls="controls" x5-video-orientation="portrait" preload="none" playsinline="true" webkit-playsinline="true" x-webkit-airplay="true" x5-video-player-fullscreen="true" x5-video-player-type="h5")
+</template>
+<script>
+module.exports = {
+  created: function () {
+    this.query('video').play()
+  }
+}
+</script>
+<style lang="less">
+.so-0 {
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+}
+.so-1 {
+  left: 14px;
+  top: 185px;
+  z-index: 2;
+}
+.so-2 {
+  left: 75px;
+  top: 932px;
+  z-index: 3;
+}
+.so-3 {
+  left: 316px;
+  top: 1273px;
+  z-index: 4;
+}
+.video-box {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 210px;
+  width: 650px;
+  height: 660px;
+  margin: 0 auto;
+  z-index: 9;
+  overflow: hidden;
+  video {
+    height: 100%;
+    width: auto;
+    position: absolute;
+    left: -50%;
+    right: -50%;
+    margin: 0 auto;
+  }
+}
+</style>
